@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web Bhumi</title>
+    <style>
+      #main{
+        transition-duration: 3s;
+      }
+    </style>
+  </head>
+  <body>
+      <h1>Web Bhumi</h1>
+      <p id="main">I am a faculty at web bhumi</p>
+      <button type="button" onclick="chalao()">Change Color</button>
+  </body>
+<script>
+  function chalao()
+    {
+    var ele = document.getElementById("main");
+    ele.style.color=window.prompt();
+    ele.style.marginLeft="300px";
+    ele.style.marginTop="300px";
+  }
+</script>
+</html>

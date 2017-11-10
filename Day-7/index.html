@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Bhumi</title>
+    <style>
+    #main
+    {
+        background-image: url("1.jpg");
+        height: 952px;
+        width: 50%;
+        background-size: 1438px 952px;
+        transition-duration: 0.3ms;
+        color: white;
+        
+    
+    }
+     </style>
+</head>
+<body>
+    <div id="main" onmousemove ="onOff()" contenteditable="true"> hello</div>
+    <button onclick="bulbOn()">On</button>
+    <button onclick="bulbOff()">Off</button>
+</body>
+<script>
+function bulbOn() {
+    document.getElementById("main").style.backgroundPositionX="-660px"
+}
+
+function bulbOff() {
+    document.getElementById("main").style.backgroundPositionX="0px"
+}
+function onOff()
+{
+    if(document.getElementById("main").style.backgroundPositionX=="-590px")
+    {
+        document.getElementById("main").style.backgroundPositionX="0px"
+    }
+    else{
+        document.getElementById("main").style.backgroundPositionX="-590px"
+    }
+}
+</script>
+</html>
